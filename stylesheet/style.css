@@ -1,3 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+.game-mode{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-menu{
+    width: 320px;
+    height: 320px;
+    background-color: #BCE8EA;
+    display: flex;
+    font-family: shadows into light;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #808080;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #5d8aa8;
+}
+
+#gameMenuPlay, .game-menu-about{
+    width: 203px;
+    background-color: #BCE8EA;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition:0.5s;
+    transition:0.5s;
+}
+
+.game-menu-about{
+    top: 100px;
+    margin-top: 10px;;
+}
+
+#gameMenuPlay:hover, .game-menu-about:hover{
+    color:white;
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+
 #game{
     display: flex;
     width: 500px;
@@ -88,5 +148,29 @@ h1{text-align: center}
     font-weight: 700;
     color: #BAA8EA;
     cursor: pointer;
+}
+
+.lose{
+    width: 200px;
+    height: 100px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: shadows into light;
+    font-size: 24px;
+}
+
+#exit{
+    cursor: pointer;
+    padding: 10px;
+}
+
+#exit:hover{
+    background-color: #808080;
+    color: #fff;
+    border-radius: 20px;
 }
 

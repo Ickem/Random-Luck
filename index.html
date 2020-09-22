@@ -8,15 +8,29 @@
 
 </head>
 <body>
-    <div>
-        <h1>Select a cube to complete the task</h1>
+    <div class="game-menu">
+        <div class="circle">
+            <div id="gameMenuPlay">PLAY</div>
+            <div class="game-menu-about">ABOUT</div>
+        </div>
     </div>
-    <div id="game">
-        <p>Choose a cube...</p>
-        <p>Your task</p>
-        <div id="playMenu"></div>
-        <div id="taskMenu"></div>
+
+    <div class="lose">
+       <p>You <span id="win"></span>!</p>
+       <span id="exit">Exit?</span>
     </div>
-    <button id="reroll">Reroll</button>
+
+    <div class="game-mode">
+        <div>
+            <h1>Select a cube to complete the task</h1>
+        </div>
+        <div id="game">
+            <p>Choose a cube...</p>
+            <p>Your task</p>
+            <div id="playMenu"></div>
+            <div id="taskMenu"></div>
+        </div>
+        <button id="reroll">Reroll</button>
+    </div>
 </body>
 </html>
